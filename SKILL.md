@@ -1,3 +1,9 @@
+---
+name: pal-framework
+description: >
+  **Canonical source:** https://rostr-paper.vercel.app/#s4 *Read this file before running the PAL pipeline. Fetch the live section only if a definition is still unclear.* PAL is a **5-stage compiler**. It transforms declarative intent into a precise, deployable agent specification — the same way a com Use this skill when working with pal framework tasks or workflows.
+---
+
 # PAL — Prompt Abstraction Layer
 
 **Canonical source:** https://rostr-paper.vercel.app/#s4
@@ -79,7 +85,7 @@ PAL-L2 — Composition:
 **Purpose:** Allocate resources, select tools, set memory mode, tune sampling, flag risks.
 
 - **Context budget:** allocate tokens across system prompt / examples / tool schema / user input / output (default target: fit within 8k).
-- **Tool selection (ranked):** P1 (required) / P2 (useful) / P3 (optional). Prune anything that adds schema overhead without clear value. {{COMPANY_NAME}} GTM standard tools: `rag_dal.web_search`, `rag_dal.web_fetch`, `rag_dal.knowledge_base`, `rag_dal.crm_query`, `hubspot_api`, `notion_api`, `asana_api`, `n8n_webhook`, `clay_table`, `amplemarket_api`, `file_read_write`, `mermaid_renderer`.
+- **Tool selection (ranked):** P1 (required) / P2 (useful) / P3 (optional). Prune anything that adds schema overhead without clear value. Enterprise Platform GTM standard tools: `rag_dal.web_search`, `rag_dal.web_fetch`, `rag_dal.knowledge_base`, `rag_dal.crm_query`, `hubspot_api`, `notion_api`, `asana_api`, `n8n_webhook`, `clay_table`, `amplemarket_api`, `file_read_write`, `mermaid_renderer`.
 - **Memory mode:** `stateless` / `short_term` / `long_term` (ContextEngine).
 - **Sampling:** `deterministic` (extraction, formatting) / `exploratory` (ideation, copy) / `balanced` (default).
 - **NPAO risk check:** any unresolved N-class blocking P-class? Flag explicitly.
